@@ -12,6 +12,9 @@
 		E1B1D75A2CD912EF00013386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7592CD912EF00013386 /* ViewController.swift */; };
 		E1B1D75F2CD912F000013386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B1D75E2CD912F000013386 /* Assets.xcassets */; };
 		E1B1D7622CD912F000013386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B1D7602CD912F000013386 /* LaunchScreen.storyboard */; };
+		E1B1D76A2CD913D100013386 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7692CD913D100013386 /* CharacterTableViewCell.swift */; };
+		E1B1D76C2CD913DC00013386 /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D76B2CD913DC00013386 /* CustomUILabel.swift */; };
+		E1B1D7722CD9146D00013386 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1B1D7712CD9146D00013386 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,8 @@
 		E1B1D75E2CD912F000013386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B1D7612CD912F000013386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1B1D7632CD912F000013386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1B1D7692CD913D100013386 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		E1B1D76B2CD913DC00013386 /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B1D7722CD9146D00013386 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 				E1B1D7552CD912EF00013386 /* AppDelegate.swift */,
 				E1B1D7572CD912EF00013386 /* SceneDelegate.swift */,
 				E1B1D7592CD912EF00013386 /* ViewController.swift */,
+				E1B1D7692CD913D100013386 /* CharacterTableViewCell.swift */,
+				E1B1D76B2CD913DC00013386 /* CustomUILabel.swift */,
 				E1B1D75E2CD912F000013386 /* Assets.xcassets */,
 				E1B1D7602CD912F000013386 /* LaunchScreen.storyboard */,
 				E1B1D7632CD912F000013386 /* Info.plist */,
@@ -80,6 +88,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyYapDatabase;
+			packageProductDependencies = (
+				E1B1D7712CD9146D00013386 /* SnapKit */,
+			);
 			productName = RickAndMortyYapDatabase;
 			productReference = E1B1D7522CD912EF00013386 /* RickAndMortyYapDatabase.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +119,9 @@
 				Base,
 			);
 			mainGroup = E1B1D7492CD912EF00013386;
+			packageReferences = (
+				E1B1D7702CD9146D00013386 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E1B1D7532CD912EF00013386 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,7 +150,9 @@
 			files = (
 				E1B1D75A2CD912EF00013386 /* ViewController.swift in Sources */,
 				E1B1D7562CD912EF00013386 /* AppDelegate.swift in Sources */,
+				E1B1D76C2CD913DC00013386 /* CustomUILabel.swift in Sources */,
 				E1B1D7582CD912EF00013386 /* SceneDelegate.swift in Sources */,
+				E1B1D76A2CD913D100013386 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1B1D7702CD9146D00013386 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1B1D7712CD9146D00013386 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B1D7702CD9146D00013386 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1B1D74A2CD912EF00013386 /* Project object */;
 }
