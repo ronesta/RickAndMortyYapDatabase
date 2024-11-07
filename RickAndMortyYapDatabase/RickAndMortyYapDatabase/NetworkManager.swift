@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import YapDatabase
 
 final class NetworkManager {
     static let shared = NetworkManager()

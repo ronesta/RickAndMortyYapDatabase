@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		508FC984DCE9B28B8B04E774 /* Pods_RickAndMortyYapDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D03EE6E8B5DFC7D6D64F26A /* Pods_RickAndMortyYapDatabase.framework */; };
 		E1B1D7562CD912EF00013386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7552CD912EF00013386 /* AppDelegate.swift */; };
 		E1B1D7582CD912EF00013386 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7572CD912EF00013386 /* SceneDelegate.swift */; };
 		E1B1D75A2CD912EF00013386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7592CD912EF00013386 /* ViewController.swift */; };
@@ -19,9 +20,13 @@
 		E1B1D7762CD914BE00013386 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7752CD914BE00013386 /* NetworkManager.swift */; };
 		E1B1D7782CD914C900013386 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7772CD914C900013386 /* NetworkError.swift */; };
 		E1B1D77A2CD914D500013386 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D7792CD914D500013386 /* ImageLoader.swift */; };
+		E1B1D77C2CD9157800013386 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1D77B2CD9157800013386 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D03EE6E8B5DFC7D6D64F26A /* Pods_RickAndMortyYapDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyYapDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67373AB9E3EAB84504683AC9 /* Pods-RickAndMortyYapDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyYapDatabase.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyYapDatabase/Pods-RickAndMortyYapDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5C8372386C477C060F6FA8 /* Pods-RickAndMortyYapDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyYapDatabase.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyYapDatabase/Pods-RickAndMortyYapDatabase.release.xcconfig"; sourceTree = "<group>"; };
 		E1B1D7522CD912EF00013386 /* RickAndMortyYapDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyYapDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B1D7552CD912EF00013386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B1D7572CD912EF00013386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		E1B1D7752CD914BE00013386 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E1B1D7772CD914C900013386 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E1B1D7792CD914D500013386 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E1B1D77B2CD9157800013386 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B1D7722CD9146D00013386 /* SnapKit in Frameworks */,
+				508FC984DCE9B28B8B04E774 /* Pods_RickAndMortyYapDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30FA0ACBABD4C48F666D2258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D03EE6E8B5DFC7D6D64F26A /* Pods_RickAndMortyYapDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		486A6DD103D4BACC316DFFC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67373AB9E3EAB84504683AC9 /* Pods-RickAndMortyYapDatabase.debug.xcconfig */,
+				9C5C8372386C477C060F6FA8 /* Pods-RickAndMortyYapDatabase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1B1D7492CD912EF00013386 = {
 			isa = PBXGroup;
 			children = (
 				E1B1D7542CD912EF00013386 /* RickAndMortyYapDatabase */,
 				E1B1D7532CD912EF00013386 /* Products */,
+				486A6DD103D4BACC316DFFC0 /* Pods */,
+				30FA0ACBABD4C48F666D2258 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +103,7 @@
 				E1B1D7752CD914BE00013386 /* NetworkManager.swift */,
 				E1B1D7772CD914C900013386 /* NetworkError.swift */,
 				E1B1D7792CD914D500013386 /* ImageLoader.swift */,
+				E1B1D77B2CD9157800013386 /* StorageManager.swift */,
 				E1B1D75E2CD912F000013386 /* Assets.xcassets */,
 				E1B1D7602CD912F000013386 /* LaunchScreen.storyboard */,
 				E1B1D7632CD912F000013386 /* Info.plist */,
@@ -91,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B1D7662CD912F000013386 /* Build configuration list for PBXNativeTarget "RickAndMortyYapDatabase" */;
 			buildPhases = (
+				31AC81E9B3BFE499AD0DA445 /* [CP] Check Pods Manifest.lock */,
 				E1B1D74E2CD912EF00013386 /* Sources */,
 				E1B1D74F2CD912EF00013386 /* Frameworks */,
 				E1B1D7502CD912EF00013386 /* Resources */,
+				3358A84972F30E0FA9136183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +184,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31AC81E9B3BFE499AD0DA445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyYapDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3358A84972F30E0FA9136183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyYapDatabase/Pods-RickAndMortyYapDatabase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyYapDatabase/Pods-RickAndMortyYapDatabase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAndMortyYapDatabase/Pods-RickAndMortyYapDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1B1D74E2CD912EF00013386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +238,7 @@
 				E1B1D7762CD914BE00013386 /* NetworkManager.swift in Sources */,
 				E1B1D77A2CD914D500013386 /* ImageLoader.swift in Sources */,
 				E1B1D7742CD914B300013386 /* Character.swift in Sources */,
+				E1B1D77C2CD9157800013386 /* StorageManager.swift in Sources */,
 				E1B1D7582CD912EF00013386 /* SceneDelegate.swift in Sources */,
 				E1B1D76A2CD913D100013386 /* CharacterTableViewCell.swift in Sources */,
 			);
@@ -302,6 +374,7 @@
 		};
 		E1B1D7672CD912F000013386 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67373AB9E3EAB84504683AC9 /* Pods-RickAndMortyYapDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,6 +405,7 @@
 		};
 		E1B1D7682CD912F000013386 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5C8372386C477C060F6FA8 /* Pods-RickAndMortyYapDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
